@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="time-container">
+        <p id="time-title">Time</p>
+        <p id="all-time">
+          <span id="minutes">01</span><span>:</span><span id="seconds">00</span>
+        </p>
+      </div>
+      <div id="moves-container">
+        <p id="moves-title">Moves</p>
+        <p id="all-moves">
+          <span id="min-moves">00</span><span>/</span
+          ><span id="max-moves">20</span>
+        </p>
+      </div>
+    </header>
+    <section id="start-game">
+      <button id="start-btn">Start game</button>
+    </section>
+    <main>
+      <h1 id="title-game">Memory Card Game</h1>
+      <div id="table"></div>
+    </main>
+    <section id="final-game" class="hidden">
+      <h2 id="message"></h2>
+      <button id="restart-btn">Restart game</button>
+    </section>
+    <script src="js/global-var.js"></script>
+    <script src="js/shuffling-dealing.js"></script>
+    <script src="js/moves.js"></script>
+    <script src="js/visible-compare.js"></script>
+    <script src="js/correct-error.js"></script>
+    <script src="js/chronometer.js"></script>
+    <script src="js/screens.js"></script>
+    <script src="js/start.js"></script>
+    <script src="js/restart.js"></script>
+  </body>
+</html>
